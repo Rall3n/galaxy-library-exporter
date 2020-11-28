@@ -19,6 +19,7 @@ platform_names = {
     'steam': 'Steam',
     'twitch': 'Prime Gaming (Twitch)',
     'uplay': 'UPlay',
+    'battlenet': 'Battle.Net'
 }
 
 
