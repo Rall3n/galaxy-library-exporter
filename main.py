@@ -166,7 +166,7 @@ class Galaxy2LibraryExporter:
             ws = wb.create_sheet(platform_names.get(platform, platform), p_indx)
             filters = []
 
-            ws.title = platform_names[platform]
+            ws.title = platform_names.get(platform, platform)
 
             for c_indx, column in enumerate(self.columns):
                 LETTER = get_column_letter(c_indx+1)
