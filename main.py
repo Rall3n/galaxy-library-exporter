@@ -163,7 +163,7 @@ class Galaxy2LibraryExporter:
             platforms[platform].sort(key=lambda game: game['title'].lower())
 
         for p_indx, platform in enumerate(platforms.keys()):
-            ws = wb.create_sheet(platform_names[platform], p_indx)
+            ws = wb.create_sheet(platform_names.get(platform, platform), p_indx)
             filters = []
 
             ws.title = platform_names[platform]
