@@ -91,7 +91,7 @@ class Galaxy2LibraryExporter:
 
             games[game_id][pieceType] = value
 
-            if pieceType == 'dlcs':
+            if pieceType == 'dlcs' and value is not None:
                 dlcs.extend(value)
 
         if isinstance(self.args.tags, list):
